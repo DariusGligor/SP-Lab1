@@ -7,11 +7,12 @@ public class Author {
 	{
 		this.name=name;
 	}
-	public Author() {
-		// TODO Auto-generated constructor stub
-	}
 	public void setAuthorName(String name)
 	{
 		this.name=name;
+	}
+	public void Print()
+	{
+		System.out.println("Author: "+ name);
 	}
 }

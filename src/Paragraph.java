@@ -10,6 +10,21 @@ public class Paragraph implements Element{
 	public void Print() {
 		System.out.println("Paragraph: "+ name);
 	}
+	@Override
+	public void add(Element element) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void remove(Element element) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Element get(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 }
