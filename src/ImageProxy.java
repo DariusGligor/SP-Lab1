@@ -1,22 +1,22 @@
-import java.util.concurrent.TimeUnit;
 
-public class Image implements Element {
-
+public class ImageProxy implements Element {
 	private String name;
-	public Image(String name)
+	private Image realImage;
+	public ImageProxy(String name)
 	{
 		this.name=name;
-		try {
-		TimeUnit.SECONDS.sleep(5);
+	}
+	Image loadImage()
+	{
+		if(realImage == null) {
+			realImage = new Image(name);
 		}
-		catch(InterruptedException e)
-		{
-			e.printStackTrace();
-		}
+		return realImage;
 	}
 	@Override
 	public void Print() {
-		System.out.println("Image: "+ name);
+		Image x=loadImage();
+		x.Print();
 	}
 	@Override
 	public void add(Element element) {
@@ -33,5 +33,4 @@ public class Image implements Element {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
