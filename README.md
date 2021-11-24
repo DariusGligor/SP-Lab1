@@ -9,3 +9,8 @@ https://github.com/DariusGligor/SP-Lab1/tree/dec82ae672213f1ba605662ee44fbaed0c8
 https://github.com/DariusGligor/SP-Lab1/commit/916a9f69d66ffc84fa268eb9431fc6dfa38c9bef
 
 - use meaningfull messages for commits
+
+# Feedback lab4:
+https://github.com/DariusGligor/SP-Lab1/commit/2a27ecccc0ad30b379bd6c797e8a635ce365877e
+
+all good
