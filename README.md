@@ -14,3 +14,8 @@ https://github.com/DariusGligor/SP-Lab1/commit/916a9f69d66ffc84fa268eb9431fc6dfa
 https://github.com/DariusGligor/SP-Lab1/commit/2a27ecccc0ad30b379bd6c797e8a635ce365877e
 
 all good
+
+# Feedback lab5:
+https://github.com/DariusGligor/SP-Lab1/commit/576de476c64434dc84f5514df986a7db9afe629f
+
+all good
