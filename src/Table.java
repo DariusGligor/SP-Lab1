@@ -7,10 +7,7 @@ public class Table implements Element{
 	{
 		this.name=name;
 	}
-	@Override
-	public void Print() {
-		System.out.println("Table: "+ name);
-	}
+
 	@Override
 	public void add(Element element) {
 		// TODO Auto-generated method stub
@@ -25,5 +22,9 @@ public class Table implements Element{
 	public Element get(int index) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
 	}
 }

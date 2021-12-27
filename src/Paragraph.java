@@ -10,13 +10,7 @@ public class Paragraph implements Element{
 	public void setAlign(IAlignStrategy align) {
 		this.align = align;
 	}
-	@Override
-	public void Print() {
-		if(align == null)
-		System.out.println("Paragraph: "+ name);
-		else 
-			System.out.println("Paragraph: "+ align.render(name));
-	}
+
 	@Override
 	public void add(Element element) {
 		// TODO Auto-generated method stub
@@ -31,6 +25,11 @@ public class Paragraph implements Element{
 	public Element get(int index) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
+		
 	}
 
 

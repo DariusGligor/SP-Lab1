@@ -1,9 +1,9 @@
 
 public class Main {
-	public static void Priting()
-	{
-		DocumentManager.getInstance().getBook().print();
-	}
+//	public static void Priting()
+//	{
+//		DocumentManager.getInstance().getBook().print();
+//	}
 
 	public static void main(String[] args) {
 	/*Book noapteBuna=new Book("Noapte buna, copii!");
@@ -83,28 +83,44 @@ public class Main {
 //		endTime = System.currentTimeMillis();
 //		
 //		System.out.println("Printing again the section 1 took "+ (endTime-startTime)+ " milliseconds");
-		Book myBook = new Book("My Book");
-		DocumentManager.getInstance().setBook(myBook);
-		Author me =new Author("My Self");
-		myBook.addAuthor(me);
+//		Book myBook = new Book("My Book");
+//		DocumentManager.getInstance().setBook(myBook);
+//		Author me =new Author("My Self");
+//		myBook.addAuthor(me);
+//		Section cap1 = new Section("Capitolul 1");
+//		myBook.add(cap1);
+//		Paragraph p1 = new  Paragraph("Pargraph 1");
+//		cap1.add(p1);
+//		Paragraph p2 = new  Paragraph("Pargraph 2");
+//		cap1.add(p2);
+//		Paragraph p3 = new  Paragraph("Pargraph 3");
+//		cap1.add(p3);
+//		Paragraph p4 = new  Paragraph("Pargraph 4");
+//		cap1.add(p4);
+//		cap1.Print();
+//		p1.setAlign(new AlignCenter());
+//		p2.setAlign(new AlignRight());
+//		p3.setAlign(new AlignLeft());
+//		System.out.println("Alineat:");
+//		cap1.Print();
+//		System.out.println("de la printing:");
+//		Priting();
 		Section cap1 = new Section("Capitolul 1");
-		myBook.add(cap1);
-		Paragraph p1 = new  Paragraph("Pargraph 1");
+		Paragraph p1 = new Paragraph("Paragraph 1");
 		cap1.add(p1);
-		Paragraph p2 = new  Paragraph("Pargraph 2");
+		Paragraph p2 = new Paragraph("Paragraph 2");
 		cap1.add(p2);
-		Paragraph p3 = new  Paragraph("Pargraph 3");
+		Paragraph p3 = new Paragraph("Paragraph 3");
 		cap1.add(p3);
-		Paragraph p4 = new  Paragraph("Pargraph 4");
+		Paragraph p4 = new Paragraph("Paragraph 4");
 		cap1.add(p4);
-		cap1.Print();
-		p1.setAlign(new AlignCenter());
-		p2.setAlign(new AlignRight());
-		p3.setAlign(new AlignLeft());
-		System.out.println("Alineat:");
-		cap1.Print();
-		System.out.println("de la printing:");
-		Priting();
+		cap1.add(new ImageProxy("ImageOne"));
+		cap1.add(new Image("imageTwo"));
+		cap1.add(new Paragraph("some text"));
+		cap1.add(new Table("table 1"));
+		BookStatistics stats = new BookStatistics();
+		cap1.accept(stats);
+		stats.printStatistics();
 	}
 
 }

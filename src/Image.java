@@ -15,10 +15,6 @@ public class Image implements Element {
 		}
 	}
 	@Override
-	public void Print() {
-		System.out.println("Image: "+ name);
-	}
-	@Override
 	public void add(Element element) {
 		// TODO Auto-generated method stub
 		
@@ -32,6 +28,11 @@ public class Image implements Element {
 	public Element get(int index) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
+		
 	}
 
 }

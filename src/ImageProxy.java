@@ -13,11 +13,7 @@ public class ImageProxy implements Element {
 		}
 		return realImage;
 	}
-	@Override
-	public void Print() {
-		Image x=loadImage();
-		x.Print();
-	}
+
 	@Override
 	public void add(Element element) {
 		// TODO Auto-generated method stub
@@ -32,5 +28,9 @@ public class ImageProxy implements Element {
 	public Element get(int index) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	@Override
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
 	}
 }
