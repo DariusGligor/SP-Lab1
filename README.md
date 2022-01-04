@@ -19,3 +19,11 @@ all good
 https://github.com/DariusGligor/SP-Lab1/commit/576de476c64434dc84f5514df986a7db9afe629f
 
 all good
+
+# Feedback lab6:
+https://github.com/DariusGligor/SP-Lab1/tree/e6a078c4bb0160ace446617c7fb8ec5d5be7f616
+
+visitor statistics should make the statistics for images, paragraphs and table => use the coresponding visit method
+try to implement also table of content
+
+# Proposed grade: 9
